@@ -4,9 +4,7 @@
     <meta charset="utf-8">
 
     <title>Cocos Creator | cocos-demo-slot-game</title>
-    
-    <base href="/z-cocos-slot-game/">
-    
+
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="mobile-web-app-capable" content="yes"/>
@@ -19,7 +17,7 @@
     <meta name="force-rendering" content="webkit"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <link rel="stylesheet" type="text/css" href="./z-cocos-slot-game/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
     <link rel="icon" href="favicon.ico"/>
   </head>
   <body>
@@ -35,21 +33,21 @@
     </p>
     <!-- Polyfills bundle. -->
 
-<script src="z-cocos-slot-game/src/polyfills.bundle.js" charset="utf-8"> </script>    
+<script src="src/polyfills.bundle.js" charset="utf-8"> </script>    
 
 
 <!-- SystemJS support. -->
-<script src="z-cocos-slot-game/src/system.bundle.js" charset="utf-8"> </script>
+<script src="src/system.bundle.js" charset="utf-8"> </script>
 
 <!-- Import map -->
-<script src="z-cocos-slot-game/src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
+<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
 
 <script>
     const REPO_NAME = 'z-cocos-slot-game'; 
     let ROOT_PATH = (location.pathname.indexOf(REPO_NAME) !== -1) ? `/${REPO_NAME}/` : '/';
     cc.assetManager.options.server = location.origin + ROOT_PATH;
 
-    System.import('./z-cocos-slot-game/index.js').catch(function(err) { console.error(err); })
+    System.import('./index.js').catch(function(err) { console.error(err); })
 </script>
   </body>
 </html>
